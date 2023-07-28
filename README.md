@@ -3,7 +3,7 @@
 <hr>
 <p>Telas de cadastro utilizando Bootstrap pela primeira vez:</p>
 <br>
-<h3>1.Primeira tela</h3>
+<h3>1. Primeira tela</h3>
 
 ![image](https://github.com/tainasays/paginasWebBootstrap/assets/102188509/5877334c-3a27-4512-a7e1-8c074d450a9e)
 1.1 Dialog Screen:
