@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header class="mt-0 mb-0 border-bottom" id="headerEditar">
+
+    <section class="container bg-white p-5">
+      <div class="row">
+        <figure class="col-sm bg-light" id="logoHeader">
+          <img src="work-from-home.png" width="70" class="mx-auto d-block" />
+          <!-- <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by amonrat rungreangfangsai - Flaticon</a> -->
+        </figure>
+
+        <div class="col-sm bg-light" id="divVazia">
+
+        </div>
+
+        <div class="col-sm" id="caixaBuscaContainer">
+          <nav class="navbar navbar-light bg-light float-right">
+            <form class="form-inline">
+              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0 btn-md" type="submit">
+                <span>
+                  <img src="lupas.png" width="25" class="d-inline-block mb-0" />
+                </span>
+              </button>
+            </form>
+          </nav>
+        </div>
+
+      </div>
+
+    </section>
+
+  </header>
+
+  <main class="container md">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-align-center">
+      <div class="d-flex justify-content-center collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link px-5" href="http://127.0.0.1:5500/index.html">Home<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link px-0" href="http://127.0.0.1:5500/editar.html?">Criar cadastro</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="#">Sobre nós</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <section class="d-flex justify-content-between m-3 p-5">
+      <h1 class="display-4 mx-auto" style="width: 400px" id="tituloMain">Cadastro de Clientes</h1>
+      <form class="form-inline">
+        <button class="btn btn-info" type="button">
+          Adicionar
+        </button>
+      </form>
+    </section>
+
+    <section class="d-flex container mt-2 mb-5">
+      <table class="table table-bordered mb-5">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NOME</th>
+            <th scope="col">DATA DE NASCIMENTO</th>
+
+            <th scope="col" class="emailCol">E-MAIL</th>
+
+            <th scope="col">AÇÕES</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr>
+            <th scope="row">1</th>
+            <td>Tessa</td>
+            <td>10/07/2016</td>
+            <td class="emailCol">tete@email.com</td>
+            <td>
+              <button type="button" class="btn btn-light">
+                <a target="_self" href='http://127.0.0.1:5500/editar.html?'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="light" class="bi bi-pencil"
+                    viewBox="0 0 16 16">
+
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z">
+                    </path>
+                  </svg>
+                </a>
+              </button>
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalExemplo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Canelinha</td>
+            <td>20/06/2017</td>
+            <td class="emailCol">canela@email.com.br</td>
+            <td>
+              <button type="button" class="btn btn-light">
+                <a target="_self" href='http://127.0.0.1:5500/editar.html?'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="light" class="bi bi-pencil"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z">
+                    </path>
+                  </svg>
+                </a>
+
+              </button>
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalExemplo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Bentinho</td>
+            <td>05/12/2020</td>
+            <td class="emailCol">bentinhofeliz@email.com</td>
+            <td>
+              <button type="button" class="btn btn-light">
+                <a target="_self" href='http://127.0.0.1:5500/editar.html?'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="light" class="bi bi-pencil"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z">
+                    </path>
+                  </svg>
+                </a>
+              </button>
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalExemplo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!-- Botão de Deletar -->
+    <section id="dialogScreenDelete">
+      <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Excluir cliente</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Deseja realmente excluir cliente?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Não</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Sim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim do botão -->
+
+
+  </main>
+
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+    <section class="col-md-4 mt-4 d-flex align-items-center">
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="logo.png" class="bi me-2" width="32" height="32">
+        <use xlink:href="#bootstrap"></use></img>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders, Módulo I</span>
+    </section>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+      <li class="ms-3 px-2"><a class="text-body-secondary" href="#"><img src="instagram.png" width="24" height="24">
+          <use xlink:href="#instagram"></use></img>
+        </a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><img src="twitter.png" width="24" height="24">
+          <use xlink:href="#twitter"></use></img>
+        </a></li>
+      <li class="ms-3 px-2"><a class="text-body-secondary" href="#"><img src="tiktok.png" width="24" height="24">
+          <use xlink:href="#tiktok"></use></img>
+        </a></li>
+    </ul>
+
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

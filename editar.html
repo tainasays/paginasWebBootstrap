@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Criar/ Alterar Cadastro</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header class="mt-2 mb-0 border-bottom" id="headerEditar">
+      
+        <section class="container bg-white p-5">
+            <div class="row">
+              <figure class="col-sm bg-light" id="logoHeader">
+                <img src="work-from-home.png" width="70" class="mx-auto d-block" />
+              </figure>
+              
+              <div class="col-sm bg-light" id="divVazia">
+                 
+              </div>
+
+              <div class="col-sm" id="caixaBuscaContainer">
+                <nav class="navbar navbar-light bg-light float-right">
+                    <form class="form-inline">
+                      <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0 btn-md" type="submit">
+                          <span>
+                            <img src="lupas.png" width="25" class="d-inline-block mb-0"/>
+                          </span>
+                        </button>
+                    </form>
+                  </nav>
+              </div>
+
+            </div>
+
+          </section>     
+        
+    </header>
+
+    <main class="mb-5 px-2 py-3" id="mainEdit">
+      <!-- <section class="d-flex w-xl" id="containerMaiorMain"> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-align-center">
+            <div class="d-flex justify-content-center collapse navbar-collapse mb-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link px-5" href="http://127.0.0.1:5500/index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link px-0" href="http://127.0.0.1:5500/editar.html?">Criar cadastro</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link" href="#">Contato</a>
+                      </li>
+                    </ul>
+              </div>
+          
+        </nav>
+
+        <section class="d-flex justify-content-center m-2 p-3">
+            <h1 class="display-4 mx-auto" style="width: 500px" id="tituloMain">Inserir / Alterar Cliente</h1>
+        </section>
+
+      <section class="text-align-center mb-5 mt-5 pb-2"  id="formContainer">
+
+          <article class="d-flex justify-content-center" id="nomeContainer">
+            <form>
+              <div class="form-group row">
+                <label for="nome" class="col">Nome:</label>
+                  <div class="col-9">
+                    <input type="nome" class="form-control" id="nomeUser" placeholder="Digite o nome">
+                  </div>
+              </div>
+            </form>
+          </article>
+
+          <article class="d-flex justify-content-center" id="emailContainer">
+            <form>
+              <div class="form group row mb-3">
+                <label for="email" class="col">E-mail:</label>
+                <div class="col-9">
+                  <input type="email" class="form-control" id="emailUser" placeholder="Digite o e-mail">
+                </div>
+              </div>
+            </form>
+          </article>
+
+          <article class="d-flex justify-content-center" id="dataContainer">
+            <form>
+              <div class="form group row mb-3">
+                <label for="data" class="col">Data de Nascimento:</label>
+                <div class="col"> 
+                  <input type="date" class="form-control" id="calendario" nome="calendario"/>
+                </div>
+              </div>
+            </form>
+          </article>
+
+          <article class="d-flex justify-content-center mb-5" id="generoContainer">
+            <form>
+              <div class="form group row mb-3">
+                <label for="genero" class="col">Gênero:</label>
+                <div class="col">
+                  <select class="form-select-sm form-select-sm mb-2" >
+                    <option selected>Feminino</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Outro</option>
+                    <option value="3">Não informar</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </article>
+
+          <article class="container" id="botaoContainer">
+            <button type="button" class="btn-outline-info d-inline-block float-right mt-3 mb-3" data-toggle="modal" data-target="#modalExemplo">Salvar</button>
+            <button type="button" class="btn-outline-secondary d-inline-block float-right mt-3 mb-3 mr-sm-3" fill="secondary">
+              <a href="/index.html">
+                Cancelar
+              </a>
+            </button>
+          </article>
+       
+      
+          
+
+<!-- Dialog Screen -->
+          <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sucesso</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Cliente salvo com sucesso.
+                </div>
+<!-- Fim da Dialog Screen -->
+
+      </section>
+
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <section class="col-md-4 mt-4 d-flex align-items-center">
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="logo.png" class="bi me-2" width="32" height="32"><use xlink:href="#bootstrap"></use></img>
+            </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders, Módulo I</span>
+        </section>
+        
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
+          <li class="ms-3 px-2"><a class="text-body-secondary" href="#">
+            <img src="instagram.png" width="24" height="24"><use xlink:href="#instagram"></use></img></a>
+          </li>
+          <li class="ms-3"><a class="text-body-secondary" href="#">
+            <img src="twitter.png" width="24" height="24"><use xlink:href="#twitter"></use></img></a>
+          </li>
+          <li class="ms-3 px-2"><a class="text-body-secondary" href="#">
+           <img src="tiktok.png" width="24" height="24"><use xlink:href="#tiktok"></use></img></a>
+          </li>
+        </ul>
+                      
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+   
+
+ 
+</body>
+</html>
