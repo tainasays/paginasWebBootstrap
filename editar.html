@@ -16,16 +16,16 @@
       
         <section class="container bg-white p-5">
             <div class="row">
-              <figure class="col-sm bg-light" id="logoHeader">
+              <figure class="col-sm bg-white" id="logoHeader">
                 <img src="work-from-home.png" width="70" class="mx-auto d-block" />
               </figure>
               
-              <div class="col-sm bg-light" id="divVazia">
+              <div class="col-sm bg-white" id="divVazia">
                  
               </div>
 
               <div class="col-sm" id="caixaBuscaContainer">
-                <nav class="navbar navbar-light bg-light float-right">
+                <nav class="navbar navbar-light bg-white float-right">
                     <form class="form-inline">
                       <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
                         <button class="btn btn-outline-light my-2 my-sm-0 btn-md" type="submit">
@@ -46,14 +46,14 @@
     <main class="mb-5 px-2 py-3" id="mainEdit">
       <!-- <section class="d-flex w-xl" id="containerMaiorMain"> -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light text-align-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white text-align-center">
             <div class="d-flex justify-content-center collapse navbar-collapse mb-3" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link px-5" href="http://127.0.0.1:5500/index.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link px-5" href="index.html" onclick="window.open('index.html', '_self');">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item px-5">
-                        <a class="nav-link px-0" href="http://127.0.0.1:5500/editar.html?">Criar cadastro</a>
+                        <a class="nav-link px-0" href="editar.html"onclick="window.open('index.html', '_self');">Criar cadastro</a>
                       </li>
                       <li class="nav-item px-5">
                         <a class="nav-link" href="#">Sobre nós</a>
@@ -97,7 +97,7 @@
           <article class="d-flex justify-content-center" id="dataContainer">
             <form>
               <div class="form group row mb-3">
-                <label for="data" class="col">Data de Nascimento:</label>
+                <label for="data" class="col">Data de nascimento:</label>
                 <div class="col"> 
                   <input type="date" class="form-control" id="calendario" nome="calendario"/>
                 </div>
@@ -123,8 +123,8 @@
 
           <article class="container" id="botaoContainer">
             <button type="button" class="btn-outline-info d-inline-block float-right mt-3 mb-3" data-toggle="modal" data-target="#modalExemplo">Salvar</button>
-            <button type="button" class="btn-outline-secondary d-inline-block float-right mt-3 mb-3 mr-sm-3" fill="secondary">
-              <a href="/index.html">
+            <button type="button" class="btn-outline-secondary d-inline-block float-right mt-3 mb-3 mr-sm-3" fill="secondary" onclick="window.open('editar.html', '_self')";>
+              <a href="index.html">
                 Cancelar
               </a>
             </button>
@@ -157,7 +157,7 @@
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img src="logo.png" class="bi me-2" width="32" height="32"><use xlink:href="#bootstrap"></use></img>
             </a>
-              <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders, Módulo I</span>
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders - Módulo I <br>Desenvolvido por Thayna Santos</span>
         </section>
         
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
