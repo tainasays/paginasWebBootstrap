@@ -40,7 +40,7 @@
         
     </header>
 
-    <main class="mb-5 px-2 py-3" id="mainEdit">
+    <main class="mb-0 px-2 py-0" id="mainEdit">
       <!-- <section class="d-flex w-xl" id="containerMaiorMain"> -->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white text-align-center">
@@ -70,40 +70,41 @@
       <section class="text-align-center mb-5 mt-5 pb-2"  id="formContainer">
 
           <article class="d-flex justify-content-center" id="nomeContainer">
-            <form>
+            <form method="post" action="#">
+            <!-- <form> -->
               <div class="form-group row">
                 <label for="nome" class="col">Nome:</label>
                   <div class="col-9">
-                    <input type="nome" class="form-control" id="nomeUser" placeholder="Digite o nome">
+                    <input type="nome" class="form-control" id="nomeUser" placeholder="Digite o nome"  required id="nomeUser"/>
                   </div>
               </div>
-            </form>
+            <!-- </form> -->
           </article>
 
           <article class="d-flex justify-content-center" id="emailContainer">
-            <form>
+            <!-- <form> -->
               <div class="form group row mb-3">
                 <label for="email" class="col">E-mail:</label>
                 <div class="col-9">
-                  <input type="email" class="form-control" id="emailUser" placeholder="Digite o e-mail">
+                  <input type="email" class="form-control" id="emailUser" placeholder="Digite o e-mail" required id="emailUser">
                 </div>
               </div>
-            </form>
+            <!-- </form> -->
           </article>
 
           <article class="d-flex justify-content-center" id="dataContainer">
-            <form>
+            <!-- <form> -->
               <div class="form group row mb-3">
                 <label for="data" class="col">Data de nascimento:</label>
                 <div class="col"> 
-                  <input type="date" class="form-control" id="calendario" nome="calendario"/>
+                  <input type="date" class="form-control" id="calendario" nome="calendario" required id="calendario"/>
                 </div>
               </div>
-            </form>
+            <!-- </form> -->
           </article>
 
           <article class="d-flex justify-content-center mb-5" id="generoContainer">
-            <form>
+            <!-- <form> -->
               <div class="form group row mb-3">
                 <label for="genero" class="col">Gênero:</label>
                 <div class="col">
@@ -115,19 +116,32 @@
                   </select>
                 </div>
               </div>
-            </form>
+            <!-- </form> -->
           </article>
 
-          <article class="container" id="botaoContainer">
-            <button type="button" class="btn-outline-info d-inline-block float-right mt-3 mb-3" data-toggle="modal" data-target="#modalExemplo">Salvar</button>
-            <button type="button" class="btn-outline-secondary d-inline-block float-right mt-3 mb-3 mr-sm-3" fill="secondary" onclick="window.open('editar.html', '_self')";>
+          <!-- "btn-outline-info d-inline-block px-3 float-right mb-2" data-toggle="modal" data-target="#modalExemplo" -->
+
+          <article class="row bg-white" id="botaoContainer">
+            <div class="col-lg-10 bg-white" id="botaoSalvar">
+            <button type="button" class="btn-outline-secondary d-inline-block mb-2 float-right" fill="secondary" onclick="window.open('editar.html', '_self')";>
               <a href="index.html">
-                Cancelar
-              </a>
+              Cancelar
+            </a>
             </button>
+              
+            </div>
+            <div class="col bg-white" id="botaoCancelar">
+              <button type="button" class="btn-outline-info d-inline-block px-3 mb-2" data-toggle="modal" data-target="#modalExemplo">
+              
+                Salvar
+              
+            </button>
+          </div>
+            
           </article>
-       
+        </form>
       
+        <!-- <input name="submit" type="submit" value="submeter"> -->
           
 
 <!-- Dialog Screen -->
