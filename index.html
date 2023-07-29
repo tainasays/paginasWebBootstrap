@@ -27,13 +27,23 @@
 
         </div>
 
+
+        <div class="col-sm-3">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Pesquisar">
+            <span class="input-group-btn">
+              <button class="btn btn-light" type="button"><i><img src="lupas.png" width="25px" /></i></button>
+            </span>
+          </div>
+        </div>
+<!-- 
         <div class="col-sm" id="caixaBuscaContainer">
           <nav class="navbar navbar-light bg-white float-right">
             <form class="form-inline">
-              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+              <input class="form-control row" type="search" placeholder="Pesquisar" aria-label="Search">
               <button class="btn btn-outline-light my-2 my-sm-0 btn-md" type="submit">
                 <span>
-                  <img src="lupas.png" width="25" class="d-inline-block mb-0" />
+                  <img src="lupas.png" width="25" class="d-inline-block mb-0" /> -->
                 </span>
               </button>
             </form>
@@ -48,7 +58,7 @@
 
   <main class="container md">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white text-align-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white text-align-center" id="navIndex">
       <div class="d-flex justify-content-center collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -71,12 +81,13 @@
 
 
     <section class="d-flex justify-content-between m-3 p-5">
-      <h1 class="display-4 mx-auto" style="width: 400px" id="tituloMain">Cadastro de Clientes</h1>
-      <form class="form-inline">
-        <button class="btn btn-info" type="button">
+      <div class="input-group">
+      <h1 class="display-4 mx-auto mb-3" style="width: 400px" id="tituloMain">Cadastro de Clientes</h1>
+      <div class="col-sm-3" id="formAdd">
+        <button class="btn btn-info input-group-btn" type="button">
           Adicionar
         </button>
-      </form>
+      </div>
     </section>
 
     <section class="d-flex container mt-2 mb-5">
@@ -213,7 +224,7 @@
         <img src="logo.png" class="bi me-2" width="32" height="32">
         <use xlink:href="#bootstrap"></use></img>
       </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders - Módulo I <br>Desenvolvido por Thayna Santos</span>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Santander Coders, Módulo I <hr>Desenvolvido por Thayna Santos</span>
     </section>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-5">
