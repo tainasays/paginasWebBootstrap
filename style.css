@@ -26,6 +26,12 @@ nav {
    }
 }
 
+@media screen and (max-width:995px){
+  #divVaziaTitleButton {
+    
+    display: none;
+  }
+}
 
 @media screen and (max-width:600px){
     .emailCol{
@@ -33,7 +39,7 @@ nav {
      }
   }
 
-  @media screen and (max-width:700px){
+@media screen and (max-width:700px){
     #divVazia {
      display:none;
      
@@ -58,17 +64,11 @@ table {
          color: rgb(24, 23, 23);
       }
 
-
-footer {
-font-family: monospace;
-font-size: 12px;
-}
 @media screen and (max-width:995px){
   #botaoSalvar, #botaoCancelar, button {
      
      display: flex;
      justify-content: center;
-     
      
    }
 }
@@ -84,17 +84,13 @@ font-size: 12px;
   }
 }
 
-/* @media screen and (max-width:995px){
-   #containerButton {
-     
-    
-     
-     
-  } */
-/* } */
 @media screen and (max-width:995px){
   #divVaziaTitleButton {
     
     display: none;
   }
 }
+footer {
+  font-family: monospace;
+  font-size: 12px;
+  }

@@ -14,35 +14,35 @@
 <body>
     <header class="mt-2 mb-0 border-bottom" id="headerEditar">
       
-        <section class="container bg-white p-5">
-            <div class="row">
-              <figure class="col-sm bg-white" id="logoHeader">
-                <img src="work-from-home.png" width="70" class="mx-auto d-block" />
-              </figure>
+      <section class="container bg-white p-5">
+          <div class="row">
+            <figure class="col-sm bg-white" id="logoHeader">
+             <img src="work-from-home.png" width="70" class="mx-auto d-block" />
+            </figure>
               
-              <div class="col-sm bg-white" id="divVazia">
+            <div class="col-sm bg-white" id="divVazia">
                  
-              </div>
+            </div>
 
-              <div class="col-sm-3">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Pesquisar">
+            <div class="col-sm-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Pesquisar">
                   <span class="input-group-btn">
-                    <button class="btn btn-light" type="button"><i><img src="lupas.png" width="25px" /></i></button>
+                    <button class="btn btn-light" type="button">
+                      <i><img src="lupas.png" width="25px" /></i>
+                    </button>
                   </span>
                 </div>
               </div>
               
+          </div>
 
-            </div>
-
-          </section>     
+        </section>     
         
     </header>
 
-    <main class="mb-0 px-2 py-0" id="mainEdit">
-      <!-- <section class="d-flex w-xl" id="containerMaiorMain"> -->
-
+    <main class="mb-0 px-2 py-0" id="mainEditar">
+      
         <nav class="navbar navbar-expand-lg navbar-light bg-white text-align-center">
             <div class="d-flex justify-content-center collapse navbar-collapse mb-3" id="navbarNav">
                 <ul class="navbar-nav">
@@ -67,83 +67,63 @@
             <h1 class="display-4 mx-auto" style="width: 500px" id="tituloMain">Inserir / Alterar Cliente</h1>
         </section>
 
-      <section class="text-align-center mb-5 mt-5 pb-2"  id="formContainer">
-
-          <article class="d-flex justify-content-center" id="nomeContainer">
-            <form method="post" action="#">
-            <!-- <form> -->
+        <section class="text-align-center mb-5 mt-5 pb-2"  id="formContainer">
+          <form method="post" action="#">  
+            
+            <article class="d-flex justify-content-center" id="nomeContainer">            
               <div class="form-group row">
                 <label for="nome" class="col">Nome:</label>
-                  <div class="col-9">
-                    <input type="nome" class="form-control" id="nomeUser" placeholder="Digite o nome"  required id="nomeUser"/>
-                  </div>
-              </div>
-            <!-- </form> -->
-          </article>
-
-          <article class="d-flex justify-content-center" id="emailContainer">
-            <!-- <form> -->
-              <div class="form group row mb-3">
-                <label for="email" class="col">E-mail:</label>
                 <div class="col-9">
-                  <input type="email" class="form-control" id="emailUser" placeholder="Digite o e-mail" required id="emailUser">
+                  <input type="nome" class="form-control" id="nomeUser" placeholder="Digite o nome"  required id="nomeUser"/>
                 </div>
               </div>
-            <!-- </form> -->
+            </article>
+
+           <article class="d-flex justify-content-center" id="emailContainer">
+            <div class="form group row mb-3">
+              <label for="email" class="col">E-mail:</label>
+              <div class="col-9">
+                <input type="email" class="form-control" id="emailUser" placeholder="Digite o e-mail" required id="emailUser">
+              </div>
+            </div>
           </article>
 
           <article class="d-flex justify-content-center" id="dataContainer">
-            <!-- <form> -->
-              <div class="form group row mb-3">
-                <label for="data" class="col">Data de nascimento:</label>
-                <div class="col"> 
+            <div class="form group row mb-3">
+              <label for="data" class="col">Data de nascimento:</label>
+              <div class="col"> 
                   <input type="date" class="form-control" id="calendario" nome="calendario" required id="calendario"/>
-                </div>
               </div>
-            <!-- </form> -->
+            </div>
           </article>
 
           <article class="d-flex justify-content-center mb-5" id="generoContainer">
-            <!-- <form> -->
-              <div class="form group row mb-3">
-                <label for="genero" class="col">Gênero:</label>
-                <div class="col">
-                  <select class="form-select-sm form-select-sm mb-2" >
-                    <option selected>Feminino</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Outro</option>
-                    <option value="3">Não informar</option>
-                  </select>
-                </div>
+            <div class="form group row mb-3">
+              <label for="genero" class="col">Gênero:</label>
+              <div class="col">
+                <select class="form-select-sm form-select-sm mb-2" >
+                  <option selected>Feminino</option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Outro</option>
+                  <option value="3">Não informar</option>
+                </select>
               </div>
-            <!-- </form> -->
+            </div>
           </article>
-
-          <!-- "btn-outline-info d-inline-block px-3 float-right mb-2" data-toggle="modal" data-target="#modalExemplo" -->
 
           <article class="row bg-white" id="botaoContainer">
-            <div class="col-lg-10 bg-white" id="botaoSalvar">
-            <button type="button" class="btn-outline-secondary d-inline-block mb-2 float-right" fill="secondary" onclick="window.open('editar.html', '_self')";>
-              <a href="index.html">
-              Cancelar
-            </a>
-            </button>
-              
+            <div class="col-lg-10 bg-white" id="botaoCancelar">
+              <button type="button" class="btn-outline-secondary d-inline-block mb-2 float-right" fill="secondary" onclick="window.open('editar.html', '_self')";>
+                <a href="index.html">Cancelar</a>
+              </button>
             </div>
-            <div class="col bg-white" id="botaoCancelar">
-              <button type="button" class="btn-outline-info d-inline-block px-3 mb-2" data-toggle="modal" data-target="#modalExemplo">
-              
-                Salvar
-              
-            </button>
-          </div>
-            
+            <div class="col bg-white" id="botaoSalvar">
+              <button type="button" class="btn-outline-info d-inline-block px-3 mb-2" data-toggle="modal" data-target="#modalExemplo">Salvar
+              </button>
+            </div>
           </article>
         </form>
-      
-        <!-- <input name="submit" type="submit" value="submeter"> -->
           
-
 <!-- Dialog Screen -->
           <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -189,8 +169,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-   
 
  
 </body>
